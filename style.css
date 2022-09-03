@@ -1,0 +1,111 @@
+#myVideo {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #ffffd2;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.heading>h1 {
+    color:#aa96da;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+.year {
+    color: #a8d8ea;
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.sweet {
+    color:#aa96da;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    text-align: center;
+}
+
+.cakes {
+    padding: 0 calc(50% - 310px);
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.cake {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 10px;
+    margin: 0;
+}
+
+.cake>img {
+    width: 200px;
+}
+
+.cake>ul {
+    background-color:#ffffd2;
+    color: #7c7575;
+}
+
+.cake>h3, .cake>p {
+    color:#52616b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.cake>p {
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+del {
+    background-color: #fbb;
+}
+
+ins {
+    display: inline-block;
+    transform: rotate(-7deg);
+    text-decoration: none;
+}
+
+button {
+        background-color: #aa96da;
+        color: #ffffd2;
+        font-size: 30px;
+        font-weight: bolder;
+        border-radius: 10px;
+}
+
+@media all and (max-width: 800px) {
+    .cakes {
+        grid-template-columns: 1fr;
+        padding: 0 calc(50% - 150px);
+    }
+}
+
+@media all and (max-width: 500px) {
+    .year, .sweet {
+        font-size: 15px;
+    }
+
+    .heading {
+        padding: 5px;
+    }
+}
